@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zx Portfolio｜作品簡介</title>
+    <link rel="icon" href="images/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/css_reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/headerfooter.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!--   header-->
+    <header>
+        <div id="logo"><a href="index.html"><img src="images/logo-02-02.png" alt="logo"></a></div>
+        <nav class="menu">
+            <ul>
+               <li><a id="aboutbtn" href="javascript:void(0);">About</a></li>
+               <li><a id="portfoliobtn" href="javascript:void(0);">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Make it happen!</h1>
+    <div id="container"></div>
+<!--    footer-->
+    <footer>Zx 2021. All Rights Reserved.</footer>
+<!--    script-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/headerfooter.js"></script>
+    <script>
+//預設帶入-------------------------------
+        $('#container').load('pages/Portfolio.html');
+//選單切換內容-------------------------------
+        $(".menu>ul>li>a").click(function(e){
+            let x = $(this).parent().index();
+            console.log(x);
+            switch (x) {
+                case 0:
+//                console.log("111");
+                    $('#container').load('pages/About.html');
+                    break;
+                case 1:
+//                   console.log("222");
+                    $('#container').load('pages/Portfolio.html');
+                    break;
+            }
+        });
+//新的-------------------------------
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body{
+    color: #7492ac;
+}
+header{
+    margin: 80px 
+}
+#logo{
+    text-align: center;
+}
+#logo img{
+    width: 50px;
+}
+.menu{
+    width: 80%;
+    height: 50px;
+    margin: 50px auto;
+/*    background-color: aqua;*/
+}
+.menu>ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+/*    background-color: aquamarine;*/
+}
+.menu li{
+    width: 50%;
+    max-width: 200px;
+    height: 100%;
+/*    background-color: black;*/
+}
+.menu a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    color: #7492ac;
+}
+.menu a:hover {
+    color: #e08334;
+/*    transform: scale(1.);*/
+/*    border: 2px solid #ffffff;*/
+    border-bottom: 2px solid #f7a94e;
+}
+.menu a:hover .menu li{
+
+    color: aliceblue;
+}
+footer{
+    height: 100px;
+    line-height: 100px;
+    letter-spacing: 3px;
+    text-align: center;
+}

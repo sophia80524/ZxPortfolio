@@ -1,0 +1,370 @@
+h1{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 5%;
+}
+#container{
+    width: 80%;
+    max-width: 1440px;
+/*    background-color: aqua;*/
+    margin: 0 auto;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+/*About________________________*/
+#Aboutphoto{
+    width: 50%;
+    max-width: 200px;
+/*    background-color: aquamarine;*/
+    margin: 1%;
+    margin-top: 10%;
+    text-align: center;
+}
+#Aboutphoto img{
+    width: 100%;
+    border-radius: 100%;
+}
+#Aboutphoto p{
+    padding: 10%;
+    letter-spacing: 5px;
+}
+#depiction{
+    padding-top: 2%;
+    max-width: 670px;
+    line-height: 2.4;
+    letter-spacing: 1px;
+    text-align: center;
+}
+/*About skill________________________*/
+#skill{
+    width: 100%;
+/*    height: 600px;*/
+/*    background-color: aqua;*/
+    margin: 10% 0 0 0;
+}
+#skill ul{
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+#skill li{
+    text-align: center;
+    border: 1px solid #c3cbd8;
+    width: 22%;
+    margin: 5% 1%;
+    background-color: white;
+    border-radius: 10px;
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+.icon{
+    margin-top: -15%;
+}
+.icon .fas{
+    font-size: 3em;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: white;
+    border-radius: 100%;
+    border: 1px solid #c3cbd8;  
+    color: #ff9300;
+}
+#skill h3{
+    font-size: 1.5em;
+    margin: 10%;
+}
+#skill p{
+    box-sizing: border-box;
+    padding: 0 10%;
+    letter-spacing: 2px;
+    line-height: 2;
+    margin-bottom: 10%;
+}
+@media screen and (max-width: 1300px) {
+    #skill li{
+        width: 45%;
+        margin: 5% 1%;
+    }   
+    .icon{
+        margin-top: -12%;
+    }
+}
+@media screen and (max-width: 769px) {
+    #skill li{
+        width: 100%;
+        margin: 5% 1%;
+        max-width: 600px;
+    }
+    .icon{
+        margin-top: -8%;
+    }
+}
+/*About License________________________*/
+#License{
+    width: 100%;
+}
+.license{
+    width: 100%;
+/*    height: 600px;*/
+    margin: 0 auto;
+    background-color: rgba(255, 229, 187, 0.41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding: 5% 0;
+}
+.licimg{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 35%;
+    height: 450px;
+}
+#l01{
+/*    background-color: aqua;*/
+    position: relative;
+    background-image: url("../images/about/UIUX01.jpg");
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+#l01-2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/about/UIUX02.jpg");
+    display: none;
+}
+#l01:hover{
+    cursor: pointer; 
+    transform: scale(1.5);
+}
+#l01:active #l01-2{
+    display: block;
+}
+#l01-2:hover{
+    cursor: pointer; 
+    display: block;
+}
+#lictext{
+    box-sizing: border-box;
+    padding: 1%;
+    width: 60%;
+    line-height: 2;
+    max-width: 650px;
+}
+#lictext h3{
+    font-size: 1.4em;
+    line-height: 2;
+    color: #f7a94e;
+    font-weight: 500;
+    border-bottom: 3px solid #f7a94e;
+    margin-bottom: 4%;
+}
+@media screen and (max-width: 1300px) {
+    .license{
+        flex-direction: column;
+        width: 100%;
+    }
+    .licimg{
+        width: 50%;
+    }
+    #lictext{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 769px) {
+    .licimg{
+        width: 60%;
+        height: 300px;
+    }
+    #lictext h3{
+        box-sizing: border-box;
+        padding: 0 5%;
+        font-size: 1.2em;
+        margin: 6% 0 2% 0;
+    }
+    #lictext p{
+        box-sizing: border-box;
+        padding: 0 5%;
+    }
+}
+/*Portfolio all________________________*/
+#PortfolioAll{
+    width: 100%;
+}
+#PortfolioAll h2{
+    font-size: 1.3em;
+    margin: 4% 0 1% 0 ; 
+    text-align: center;
+}
+.line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line div{
+    margin-top: 3%;
+    width: 40%;
+    height: 2px;
+    background: -webkit-linear-gradient(left, rgba(189, 195, 199, 0), rgba(44, 62, 80, 0.6), rgba(189, 195, 199, 0));
+    background: -o-linear-gradient(left, rgba(189, 195, 199, 0), rgba(44, 62, 80, 0.6), rgba(189, 195, 199, 0));
+    background: linear-gradient(to right, rgba(189, 195, 199, 0), rgba(44, 62, 80, 0.6), rgba(189, 195, 199, 0));
+}
+.line h2{
+    width: 15%;
+    height: 50px;
+    line-height: 50px;
+/*    background-color: aqua;*/
+    display: block;
+}
+@media screen and (max-width: 769px) {
+    .line div{
+        width: 30%;
+        margin-top: 4%;
+    }
+    .line h2{
+        width: 40%;
+    }
+}
+/*Portfolio web________________________*/
+#web{
+    width: 100%;
+/*    height: 200px;*/
+/*    background-color: antiquewhite;*/
+}
+.web{
+    position: relative;
+    width: 100%;
+    height: 350px;
+/*    border: 1px solid red;*/
+    margin: 2% 1%;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 10px 5px 20px rgba(106, 103, 103, 0.09);
+}
+#web-pento{
+    background-image: url("../images/web/pento.png");
+}
+#web-gaja{
+    background-image: url("../images/web/gaja.png");
+}
+#web-first{
+    background-image: url("../images/web/first.jpg");
+    background-position: 50% 43% ;
+}
+.web>a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 30px;
+}
+.coverarea{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(105, 105, 105, 0.5);
+    right: 0;
+    border-radius:30px;
+    color: #ffffff;
+    pointer-events: none;
+    opacity: 0;
+    transition: 1s;
+    -webkit-transition: 1s;
+    box-sizing: border-box;
+    padding: 2% 3%;
+}
+.web:hover .coverarea{
+    opacity: 1;
+}
+.coverarea h3{
+    font-size: 1.4em;
+    line-height: 3;
+    color: #ffe6a3;
+}
+.coverarea p{
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+.coverarea a{
+    display: block;
+    width: 100%;
+    height: 50px;
+    color: blanchedalmond;
+    background: #bdc3c7;
+    background: -webkit-linear-gradient(left, rgba(189, 195, 199, 0), #2c3e50, rgba(189, 195, 199, 0));
+    background: -o-linear-gradient(left, rgba(189, 195, 199, 0), #2c3e50, rgba(189, 195, 199, 0));
+    background: linear-gradient(to right, rgba(189, 195, 199, 0), #2c3e50, rgba(189, 195, 199, 0));
+    text-align: center;
+    line-height: 50px;
+    opacity: 0.9;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    pointer-events: all;
+    border-radius: 50px;
+    margin-top: 1%;
+}
+.coverarea a:hover{
+    background: #fceabb;
+    background: -webkit-linear-gradient(left, rgba(252, 234, 187, 0), #f8b500, rgba(252, 234, 187, 0));
+    background: -o-linear-gradient(left, rgba(252, 234, 187, 0), #f8b500, rgba(252, 234, 187, 0));
+    background: linear-gradient(to right, rgba(252, 234, 187, 0) #f8b500,rgba(252, 234, 187, 0));
+    opacity: 1;
+}
+@media screen and (max-width: 769px) {
+    .web{
+        border-radius: 30px 30px 0px 0px;
+    }
+    #web-first,#web-gaja{
+        margin-top: 370px;
+    }
+    .coverarea{
+        opacity: 1;
+        top:350px;
+        background-color: #fff2e7;
+        border-radius: 0px 0px 30px 30px;
+        padding: 0 6%;
+    }
+    .coverarea h3{
+        color: #ffb779;
+        text-align: center;
+        border-bottom: 2px solid #ffb779;
+        line-height:2.5;
+        margin-bottom: 6%;
+    }
+    .coverarea p{
+        color:#7492ac;
+    }
+    .coverarea a{
+        color: #ffb779;
+        background: -webkit-linear-gradient(left, rgba(189, 195, 199, 0), rgba(255, 255, 255, 0), rgba(189, 195, 199, 0));
+        background: -o-linear-gradient(left, rgba(189, 195, 199, 0), rgba(255, 255, 255, 0), rgba(189, 195, 199, 0));
+        background: linear-gradient(to right, rgba(189, 195, 199, 0), rgba(255, 255, 255, 0), rgba(189, 195, 199, 0));
+        border: 2px solid #ffb779;
+    }
+    .coverarea a:hover{
+        color: #ffa01f;
+        background: -webkit-linear-gradient(left, rgba(189, 195, 199, 0), rgba(255, 255, 255, 0), rgba(189, 195, 199, 0));
+        background: -o-linear-gradient(left, rgba(189, 195, 199, 0), rgba(255, 255, 255, 0), rgba(189, 195, 199, 0));
+        background: linear-gradient(to right, rgba(189, 195, 199, 0), rgba(255, 255, 255, 0), rgba(189, 195, 199, 0));
+    }
+}
+/*Portfolio graphic________________________*/
+#graphic{
+    width: 100%;
+    height: 500px;
+    background-color: #9d6822;
+}
+/*Portfolio movies________________________*/
+#movies{
+    width: 100%;
+    height: 200px;
+    background-color: #eda03a;
+}
