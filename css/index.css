@@ -406,7 +406,7 @@ h1{
 }
 @media screen and (max-width: 1300px) {
     .gra{
-        padding-bottom: 30%;    
+        padding-bottom: 30%;  
     }
 }
 @media screen and (max-width: 769px) {
@@ -429,6 +429,9 @@ h1{
 }
 .gw48{
     width: 48%;
+}
+.gw64{
+    width: 64.7%;
 }
 .gw313{
     width: 31.3%;
@@ -464,22 +467,31 @@ h1{
     background-image: url("../images/gallery/alaska-02.png");
 }
 #gra08{
-    background-image: url("../images/gallery/");
+    background-image: url("../images/gallery/fruit-02.jpg");
 }
 #gra09{
-    background-image: url("../images/gallery/");
+    background-image: url("../images/gallery/pchot/sadesnew.jpg");
 }
 #gra10{
-    background-image: url("../images/gallery/");
+    background-image: url("../images/gallery/pchot/04ss-02.jpg");
 }
 #gra11{
-    background-image: url("../images/gallery/");
+    background-image: url("../images/gallery/pchot/razerpoke.jpg");
 }
 #gra12{
-    background-image: url("../images/gallery/");
+    background-image: url("../images/gallery/exhibition/0824-%E9%B9%BF%E6%B8%AF%E9%8E%AE%E5%85%AC%E6%89%80-%E6%9E%97%E4%B8%96%E8%BC%9D-%E5%81%B6%E6%8B%BE%E5%9C%A8%E5%9C%B0%E6%83%85-%E9%9B%BB%E8%A6%96%E7%89%86448x320%20PT-01.jpg");
 }
 #gra13{
-    background-image: url("../images/gallery/");
+    background-image: url("../images/gallery/exhibition/0719-%E9%B9%BF%E6%B8%AF%E9%8E%AE%E5%85%AC%E6%89%80-%E6%96%87%E8%B5%B7%E9%9B%B2%E6%B9%A7-%E6%B5%B7%E5%A0%B1-01.jpg");
+}
+#gra14{
+    background-image: url("../images/gallery/exhibition/0830-%E9%B9%BF%E6%B8%AF%E9%8E%AE%E5%85%AC%E6%89%80-%E6%9E%97%E4%BF%8A%E5%AF%85%E5%80%8B%E5%B1%95-%E6%B5%B7%E5%A0%B1-01.jpg");
+}
+#gra15{
+    background-image: url("../images/gallery/skypeople-02.png");
+}
+#gra16{
+    background-image: url("../images/gallery/card-02.png");
 }
 /*平面作品文字區================*/
 .gra .coverarea{
@@ -494,20 +506,38 @@ h1{
     justify-content: center;
     align-items: center;
     background-color: rgba(33, 33, 33, 0.79);
-    opacity: 1;
+    opacity: 0;
     pointer-events:auto;
 }
 .gra .coverarea h3{
     width: 100%;
 }
+.gra .coverarea p{
+}
 #graphic ul li:hover .coverarea{
     opacity: 1;
 }
-@media screen and (max-width: 769px){
+@media screen and (max-width: 1300px){
     .gra .coverarea{
         top:0px;
-        border-radius: 30px;
+/*        border-radius: 0px;*/
+        background-color: rgba(255, 255, 255, 0.8);
+        opacity: 1;
     }
+    .gra .coverarea h3{
+        line-height: 2;
+        font-size: 1.2em;
+        color: #b24922;
+        border-bottom: 2px solid #b24922;
+    }
+    .gra .coverarea p{
+        font-size: 0.8em;
+        margin-top: 5px;
+        color: dimgrey;
+    }
+}
+@media screen and (max-width: 769px){
+
 }
 /*平面作品點開大圖================*/
 .graimg{
