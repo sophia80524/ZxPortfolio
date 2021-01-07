@@ -259,6 +259,18 @@ h1{
     background-image: url("../images/web/first.jpg");
     background-position: 50% 43% ;
 }
+@media screen and (max-width: 769px) {
+    #web-pento{
+        background-image: url("../images/web/pento2.png");
+    }
+    #web-gaja{
+        background-image: url("../images/web/gaja2.png");
+    }
+    #web-first{
+        background-image: url("../images/web/first2.jpg");
+        background-position: 50% 43% ;
+    }  
+}
 .web>a{
     position: absolute;
     width: 100%;
